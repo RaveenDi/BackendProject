@@ -49,10 +49,18 @@
 	</dependencies>
 
 	<build>
+		<finalName>backend-project</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<configuration>
+							<mainClass>com.backend.BackendProject.BackendProjectApplication</mainClass>
+						</configuration>
+					</execution>
+				</executions>
 				<configuration>
 					<excludes>
 						<exclude>
